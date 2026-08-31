@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img">
+  <!-- Computer repair and maintenance illustration -->
+  <defs>
+    <linearGradient id="rep-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#122a4d"/>
+    </linearGradient>
+    <radialGradient id="rep-glow" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="rep-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0v48" fill="none" stroke="#1e3a5f" stroke-width="1" opacity="0.35"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="560" rx="24" fill="url(#rep-bg)"/>
+  <rect width="800" height="560" rx="24" fill="url(#rep-grid)"/>
+  <circle cx="400" cy="280" r="240" fill="url(#rep-glow)"/>
+
+  <!-- Open laptop with tools -->
+  <g transform="translate(200 150)">
+    <rect x="40" y="0" width="260" height="160" rx="14" fill="none" stroke="#93c5fd" stroke-width="8"/>
+    <rect x="64" y="24" width="212" height="112" rx="6" fill="#3b82f6" opacity="0.2"/>
+    <!-- gear on screen -->
+    <circle cx="170" cy="80" r="34" fill="none" stroke="#60a5fa" stroke-width="8"/>
+    <g stroke="#60a5fa" stroke-width="8" stroke-linecap="round">
+      <path d="M170 32v-12M170 140v-12M122 80h-12M230 80h-12M136 46l-9-9M213 123l-9-9M136 114l-9 9M213 37l-9 9"/>
+    </g>
+    <path d="M10 176h320l28 42H-18z" fill="none" stroke="#93c5fd" stroke-width="8" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Screwdriver -->
+  <g transform="translate(120 380) rotate(-30)" stroke-linecap="round">
+    <rect x="0" y="-11" width="90" height="22" rx="10" fill="#3b82f6"/>
+    <line x1="90" y1="0" x2="190" y2="0" stroke="#93c5fd" stroke-width="10"/>
+    <line x1="190" y1="0" x2="216" y2="0" stroke="#60a5fa" stroke-width="7"/>
+  </g>
+
+  <!-- Wrench -->
+  <g transform="translate(560 340) rotate(35)" stroke-linecap="round">
+    <line x1="20" y1="0" x2="150" y2="0" stroke="#93c5fd" stroke-width="16"/>
+    <path d="M20 -22a26 26 0 1 0 0 44l14-10v-24z" fill="#3b82f6" opacity="0.85"/>
+  </g>
+
+  <!-- Spark accents -->
+  <g stroke="#3b82f6" stroke-width="7" stroke-linecap="round">
+    <path d="M648 130v34M631 147h34"/>
+    <path d="M132 250v28M118 264h28"/>
+  </g>
+</svg>

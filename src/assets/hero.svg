@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img">
+  <!-- Hero composite illustration: laptop, CCTV camera, printer and networking equipment -->
+  <defs>
+    <linearGradient id="hero-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#10233f"/>
+    </linearGradient>
+    <radialGradient id="hero-glow" cx="0.5" cy="0.45" r="0.65">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="hero-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0v48" fill="none" stroke="#1e3a5f" stroke-width="1" opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="720" rx="28" fill="url(#hero-bg)"/>
+  <rect width="960" height="720" rx="28" fill="url(#hero-grid)"/>
+  <circle cx="480" cy="340" r="300" fill="url(#hero-glow)"/>
+
+  <!-- Tile 1: Laptop -->
+  <g transform="translate(70 90)">
+    <rect x="0" y="0" width="380" height="250" rx="18" fill="#0d1f38" stroke="#234a7c" stroke-width="1.5"/>
+    <g transform="translate(80 45)">
+      <rect x="30" y="0" width="160" height="100" rx="10" fill="none" stroke="#93c5fd" stroke-width="6"/>
+      <rect x="44" y="14" width="132" height="72" rx="4" fill="#3b82f6" opacity="0.25"/>
+      <path d="M110 40l22 22M110 62l22-22" stroke="#60a5fa" stroke-width="5" stroke-linecap="round"/>
+      <path d="M8 118h204l16 26H-8z" fill="none" stroke="#93c5fd" stroke-width="6" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- Tile 2: CCTV camera -->
+  <g transform="translate(510 90)">
+    <rect x="0" y="0" width="380" height="250" rx="18" fill="#0d1f38" stroke="#234a7c" stroke-width="1.5"/>
+    <g transform="translate(95 40)">
+      <line x1="95" y1="0" x2="95" y2="26" stroke="#93c5fd" stroke-width="6"/>
+      <g transform="rotate(24 95 60)">
+        <rect x="25" y="34" width="140" height="52" rx="14" fill="none" stroke="#93c5fd" stroke-width="6"/>
+        <circle cx="150" cy="60" r="15" fill="#3b82f6" opacity="0.5"/>
+        <circle cx="150" cy="60" r="7" fill="#60a5fa"/>
+      </g>
+      <path d="M40 130a55 55 0 0 1 110 0" fill="none" stroke="#3b82f6" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+      <path d="M58 148a37 37 0 0 1 74 0" fill="none" stroke="#60a5fa" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+      <circle cx="95" cy="152" r="6" fill="#93c5fd"/>
+    </g>
+  </g>
+
+  <!-- Tile 3: Printer -->
+  <g transform="translate(70 400)">
+    <rect x="0" y="0" width="380" height="250" rx="18" fill="#0d1f38" stroke="#234a7c" stroke-width="1.5"/>
+    <g transform="translate(85 40)">
+      <rect x="40" y="0" width="120" height="42" rx="6" fill="none" stroke="#93c5fd" stroke-width="6"/>
+      <rect x="0" y="46" width="200" height="66" rx="12" fill="none" stroke="#93c5fd" stroke-width="6"/>
+      <rect x="146" y="60" width="14" height="8" rx="3" fill="#3b82f6"/>
+      <rect x="166" y="60" width="14" height="8" rx="3" fill="#60a5fa"/>
+      <rect x="36" y="96" width="128" height="56" rx="6" fill="#3b82f6" opacity="0.25"/>
+      <path d="M56 116h88M56 132h64" stroke="#60a5fa" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Tile 4: Networking -->
+  <g transform="translate(510 400)">
+    <rect x="0" y="0" width="380" height="250" rx="18" fill="#0d1f38" stroke="#234a7c" stroke-width="1.5"/>
+    <g transform="translate(95 35)">
+      <rect x="50" y="70" width="100" height="44" rx="10" fill="none" stroke="#93c5fd" stroke-width="6"/>
+      <circle cx="72" cy="92" r="5" fill="#3b82f6"/>
+      <circle cx="94" cy="92" r="5" fill="#60a5fa"/>
+      <path d="M84 114v34M84 148h-58v20M84 148h58v20M84 114V70" fill="none" stroke="#3b82f6" stroke-width="5"/>
+      <circle cx="26" cy="180" r="13" fill="none" stroke="#93c5fd" stroke-width="5"/>
+      <circle cx="142" cy="180" r="13" fill="none" stroke="#93c5fd" stroke-width="5"/>
+      <circle cx="84" cy="56" r="13" fill="none" stroke="#93c5fd" stroke-width="5"/>
+      <path d="M84 30a26 26 0 0 1 26 26" fill="none" stroke="#60a5fa" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+      <path d="M84 16a40 40 0 0 1 40 40" fill="none" stroke="#60a5fa" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+    </g>
+  </g>
+</svg>

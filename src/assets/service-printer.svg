@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img">
+  <!-- Printer sales and service illustration -->
+  <defs>
+    <linearGradient id="prt-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#122a4d"/>
+    </linearGradient>
+    <radialGradient id="prt-glow" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="prt-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0v48" fill="none" stroke="#1e3a5f" stroke-width="1" opacity="0.35"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="560" rx="24" fill="url(#prt-bg)"/>
+  <rect width="800" height="560" rx="24" fill="url(#prt-grid)"/>
+  <circle cx="400" cy="280" r="240" fill="url(#prt-glow)"/>
+
+  <!-- Printer -->
+  <g transform="translate(220 110)">
+    <!-- input paper -->
+    <rect x="80" y="0" width="200" height="76" rx="10" fill="none" stroke="#93c5fd" stroke-width="9"/>
+    <!-- body -->
+    <rect x="0" y="82" width="360" height="120" rx="20" fill="none" stroke="#93c5fd" stroke-width="9"/>
+    <circle cx="308" cy="112" r="9" fill="#3b82f6"/>
+    <rect x="286" y="136" width="44" height="12" rx="6" fill="#60a5fa"/>
+    <!-- output paper with printed lines -->
+    <rect x="70" y="188" width="220" height="130" rx="10" fill="#3b82f6" opacity="0.22"/>
+    <path d="M104 224h152M104 252h118M104 280h136" stroke="#60a5fa" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Spark accents -->
+  <g stroke="#3b82f6" stroke-width="7" stroke-linecap="round">
+    <path d="M148 150v34M131 167h34"/>
+    <path d="M652 400v28M638 414h28"/>
+  </g>
+</svg>

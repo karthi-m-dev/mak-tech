@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img">
+  <!-- CCTV camera installation illustration -->
+  <defs>
+    <linearGradient id="cctv-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#122a4d"/>
+    </linearGradient>
+    <radialGradient id="cctv-glow" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="cctv-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0v48" fill="none" stroke="#1e3a5f" stroke-width="1" opacity="0.35"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="560" rx="24" fill="url(#cctv-bg)"/>
+  <rect width="800" height="560" rx="24" fill="url(#cctv-grid)"/>
+  <circle cx="400" cy="260" r="240" fill="url(#cctv-glow)"/>
+
+  <!-- Ceiling mount -->
+  <line x1="400" y1="40" x2="400" y2="96" stroke="#93c5fd" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Camera body -->
+  <g transform="rotate(18 400 170)">
+    <rect x="270" y="130" width="260" height="84" rx="22" fill="none" stroke="#93c5fd" stroke-width="9"/>
+    <circle cx="500" cy="172" r="26" fill="#3b82f6" opacity="0.5"/>
+    <circle cx="500" cy="172" r="12" fill="#60a5fa"/>
+    <rect x="300" y="152" width="90" height="10" rx="5" fill="#3b82f6"/>
+  </g>
+
+  <!-- Coverage / signal -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M330 320a160 160 0 0 0 250 -40" stroke="#3b82f6" stroke-width="7" opacity="0.85"/>
+    <path d="M368 352a110 110 0 0 0 168 -28" stroke="#60a5fa" stroke-width="7" opacity="0.55"/>
+    <path d="M406 382a62 62 0 0 0 92 -16" stroke="#93c5fd" stroke-width="7" opacity="0.35"/>
+  </g>
+
+  <!-- Monitor with feed -->
+  <g transform="translate(560 380)">
+    <rect x="0" y="0" width="150" height="100" rx="10" fill="none" stroke="#93c5fd" stroke-width="7"/>
+    <rect x="14" y="14" width="56" height="34" rx="4" fill="#3b82f6" opacity="0.4"/>
+    <rect x="80" y="14" width="56" height="34" rx="4" fill="#60a5fa" opacity="0.4"/>
+    <path d="M20 66h46M20 80h64" stroke="#60a5fa" stroke-width="5" stroke-linecap="round"/>
+    <path d="M75 100v18M45 118h60" stroke="#93c5fd" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>
