@@ -8,11 +8,11 @@
 
 // TODO: Replace with the real production domain (used for canonical URLs, sitemap, OG tags).
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.maktech-example.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://mak-tech.vercel.app";
 
 export const site = {
   name: "Mak Tech",
-  legalName: "Mak Tech", // TODO: Update to registered business name if different
+  legalName: "Mak Tech",
   tagline: "Technology Solutions You Can Trust",
   description:
     "Mak Tech provides laptop sales and service, computer repair, CCTV installation, printer service, networking and technology solutions in Tiruppur.",
@@ -21,19 +21,20 @@ export const site = {
   country: "India",
   addressLocality: "Tiruppur",
   address: "228, Kannammal Building, Kongu Main Road, LRG Compound Opposite, Tiruppur, Tamil Nadu, India",
-  postalCode: "[POSTAL CODE]",
-  // ⚠️ PLACEHOLDER — replace with real phone number (used in tel: links).
-  phone: "[PHONE NUMBER]",
-  // ⚠️ PLACEHOLDER — replace with the WhatsApp number in international format without "+".
-  whatsapp: "[WHATSAPP NUMBER]",
-  whatsappDisplay: "[WHATSAPP NUMBER]",
-  email: "[EMAIL]",
+  postalCode: "641607",
+  phone: "+91 98421 55560",
+  whatsapp: "919842155560",
+  whatsappDisplay: "+91 98421 55560",
+  email: "karthimek0@gmail.com",
   hours: "Mon – Sat: 9:30 AM – 8:00 PM | Sun: 10:00 AM – 2:00 PM", // TODO: Confirm actual business hours
   openingHoursSchema: ["Mo-Sa 09:30-20:00", "Su 10:00-14:00"],
   googleMapEmbedUrl:
     "https://www.google.com/maps?q=228+Kannammal+Building+Kongu+Main+Road+LRG+Compound+Opposite+Tiruppur+Tamil+Nadu+India&output=embed",
   googleMapDirectionsUrl:
     "https://www.google.com/maps/dir/?api=1&destination=228+Kannammal+Building+Kongu+Main+Road+LRG+Compound+Opposite+Tiruppur+Tamil+Nadu+India",
+  googleSiteVerification:
+    process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ??
+    "-Fm84ddUzP398rbfCOsHBcNPZ1uyT66E3ES7uqmWYrg",
 } as const;
 
 /** Convenience link builders so tel:/wa.me links stay consistent everywhere. */

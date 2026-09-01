@@ -6,7 +6,7 @@ import Brands from "@/components/Brands";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { site } from "@/data/site";
+import { site, SITE_URL } from "@/data/site";
 import { localBusinessJsonLd } from "@/lib/seo";
 
 const inter = Inter({
@@ -17,7 +17,7 @@ const inter = Inter({
 
 // Homepage title & description per SEO brief; child pages override via their own metadata.
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.maktech-example.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Mak Tech | Computer, Laptop, CCTV & Printer Services in Tiruppur",
     template: "%s | Mak Tech",
@@ -54,6 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable} suppressHydrationWarning>
       <head>
+        <meta name="google-site-verification" content={site.googleSiteVerification} />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var s=localStorage.getItem('mak_tech_theme');var d=s==='dark'||((!s||s==='system')&&window.matchMedia('(prefers-color-scheme: dark)').matches);if(d){document.documentElement.classList.add('dark');document.documentElement.style.colorScheme='dark';}else{document.documentElement.classList.remove('dark');document.documentElement.style.colorScheme='light';}}catch(e){}})();`,
