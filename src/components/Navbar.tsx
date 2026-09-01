@@ -84,7 +84,7 @@ export default function Navbar() {
             aria-label={`Call ${site.name}`}
           >
             <Phone className="h-4 w-4" aria-hidden="true" />
-            +91 98765 43210
+            {site.phone}
           </a>
           <a
             href="#contact"

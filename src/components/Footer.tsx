@@ -142,7 +142,7 @@ export default function Footer() {
             </li>
             <li className="flex gap-3">
               <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" aria-hidden="true" />
-              <a href={links.tel} className="hover:text-brand-300">+91 98765 43210</a>
+              <a href={links.tel} className="hover:text-brand-300">{site.phone}</a>
             </li>
             <li className="flex gap-3">
               <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" aria-hidden="true" />
